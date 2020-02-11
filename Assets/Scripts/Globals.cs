@@ -12,14 +12,12 @@ public static class Globals
     // Set image for background
     public static string backgroundFile = "/Materials/PunchbowlFallsU.png";
 
-    // Set start point
-    public static int startX = 3;
-    public static int startZ = 4;
-
     // Set end point
     public static int endX = -3;
     public static int endZ = 0;
 
     // Declare timeText variable
     public static string timeText;
+
+    public static Texture2D tex = new Texture2D(1, 1);
 }

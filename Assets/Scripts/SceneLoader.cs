@@ -4,23 +4,52 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
-{
-    // Go to next scene in build order
-    // Based on Udemy course:
-    // Complete C# Unity Developer 2D: Learn to Code Making Games
-    public void LoadNextScene()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-
-        SceneManager.LoadScene(currentSceneIndex + 1);
+{   
+    // Go to Main Menu
+    public void LoadMainMenu()
+    {   // Is there a better way to do this than hardcoding?
+        SceneManager.LoadScene("MainMenu");
     }
 
-    // Go to previous scene in build order
-    public void LoadPrevScene()
+    // Go to Capture Image
+    public void LoadCaptureImage()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene("CaptureImage");
+    }
 
-        SceneManager.LoadScene(currentSceneIndex - 1);
+    // Go to Select Maze
+    public void SelectMaze()
+    {
+        SceneManager.LoadScene("SelectMaze");
+    }
+
+    // Start the Game
+    public void LoadGame()
+    {   // Will the maze to load be controlled by global variable?
+        SceneManager.LoadScene("MazeGame");
+    }
+
+    // Go to Instructions
+    public void LoadInstructions()
+    {   
+        SceneManager.LoadScene("Instructions");
+    }
+
+    // Go to Options
+    public void LoadOptions()
+    {
+        SceneManager.LoadScene("Options");
+    }
+
+    // Go to Win Scene
+    public void LoadWin()
+    {
+        SceneManager.LoadScene("WinGame");
+    }
+
+    // Exit the application
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

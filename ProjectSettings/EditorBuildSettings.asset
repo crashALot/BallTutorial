@@ -6,12 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StartGame.unity
-    guid: ffba26cf7888c284aabb1880b8fcb0e0
+    path: Assets/Scenes/Intro.unity
+    guid: d14e5041d3814ac43b2739a2c6b43f62
   - enabled: 1
-    path: Assets/Scenes/MiniGame.unity
+    path: Assets/Scenes/MazeGame.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/WinGame.unity
+    path: Assets/Scenes/MainMenu.unity
     guid: a247843d9d231f043861e482050a71b5
+  - enabled: 1
+    path: Assets/Scenes/CaptureImage.unity
+    guid: 6bde7b6e3d814ed44a90fd1bc42775d1
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 1139e140025484a41b02257aa5f7cf71
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 5a0bcd08fcd4179498cbee4dd17637cd
+  - enabled: 1
+    path: Assets/Scenes/WinGame.unity
+    guid: e457b90957bb2ad4c85458f685182e33
+  - enabled: 1
+    path: Assets/Scenes/SelectMaze.unity
+    guid: f4b5f22eef075ef45822bfea1740eb6a
   m_configObjects: {}
